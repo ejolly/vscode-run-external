@@ -26,7 +26,7 @@ function activate(context) {
       `osascript ` +
       ` -e 'tell app "iTerm"' ` +
       ` -e 'set mysession to current session of current window' ` +
-      ` -e 'tell mysession to write text "${textToPaste}"' ` +
+      ` -e 'tell mysession to write text "%paste"' ` +
       ` -e 'end tell'`;
     // console.log("command", command);
     exec(command);
